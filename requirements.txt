@@ -1,0 +1,18 @@
+autopep8==1.5.4
+beautifulsoup4==4.9.1
+certifi==2020.6.20
+chardet==3.0.4
+dryscrape==1.0
+idna==2.10
+lxml==4.5.2
+psycopg2-binary==2.8.5
+pycodestyle==2.6.0
+requests==2.24.0
+selenium==3.141.0
+soupsieve==2.0.1
+toml==0.10.1
+urllib3==1.25.10
+-e git+https://github.com/niklasb/webkit-server.git@c9e3a8394b8c51000c35f8a56fb770580562b544#egg=webkit_server
+dryscrape==1.0
+git+git://github.com/niklasb/webkit-server.git
+xvfbwrapper
