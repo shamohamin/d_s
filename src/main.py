@@ -3,8 +3,9 @@ from utils.worker import Worker
 
 if __name__ == '__main__':
     db = DB()
-    Worker(db=db, base_url="https://rahavard365.com/stock").run_program()
     # db.execute(file="create_table.sql")
+    Worker(db=db, base_url="https://rahavard365.com/stock").run_program()
+    
     # db.execute(query="SELECT * from stocks")
     # re = RequestHandler(db, "https://rahavard365.com/stock")
     # params = {

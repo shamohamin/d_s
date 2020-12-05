@@ -110,12 +110,15 @@ class Database(Executor):
                 raise Exception("file not exists")
         except (Exception, psycopg2.OperationalError) as ex:
             print("inside execute from file : ", ex)
+        finally:
+            self.connection.commit()
 
     def get_output_of_insert_and_update(self):
         try:
             if self.cur is not None:
                 rows = self.cur.rowcount
                 self.results = rows
+                print(self.results)
         except Exception as ex:
             print('get_output_of_insert_and_update: ', ex)
 

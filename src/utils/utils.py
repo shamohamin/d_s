@@ -25,7 +25,10 @@ class PersianToEnglishConverter:
             '۸': '8',
             '۹': '9',
             '٬': '',
-            '٫': ''
+            '٫': '.',
+            '/': '-',
+            '٪': '',
+            '—': '0'
         }
         self.pattern = "|".join(map(re.escape, self.num_dic.keys()))
 
